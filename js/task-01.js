@@ -11,10 +11,10 @@
 
 
 
-const categoriesList = document.querySelector('#categories');
-console.log(`В списке ${categoriesList.children.length} категории`);
+const categoriesListCount = document.querySelector('#categories');
+console.log(`В списке ${categoriesListCount.children.length} категории`);
 
-const categoriesListItemArray = [...categoriesList.children];
+const categoriesListItemArray = [...categoriesListCount.children];
 
 categoriesListItemArray.forEach(element => {
     console.log(`Категория: ${element.querySelector('h2').textContent}\nКоличество элементов: ${element.querySelectorAll('li').length}`,

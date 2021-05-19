@@ -21,3 +21,15 @@ const images = [
       alt: 'Group of Horses Running',
     },
   ];
+
+
+const createImagesMarkup = image => {
+  return `<li><image src = ${image.url} alt = ${image.alt} width = 360px></li>`
+}
+const createImagesGallery = document.querySelector("#gallery");
+
+const createImagesRowsMarkup = images.map(createImagesMarkup).join('');
+
+createImagesGallery.insertAdjacentHTML("afterbegin", createImagesRowsMarkup);
+
+// console.log(createImagesRowsMarkup)
