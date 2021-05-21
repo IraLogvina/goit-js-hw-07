@@ -3,9 +3,10 @@
 // Если введено подходящее количество, то border инпута становится зеленым, если неправильное - красным.
 // Для добавления стилей, используй CSS-классы valid и invalid.
 
+
 const inputRef = document.querySelector('input#validation-input');
 
-const inputLength = Number(inputRef.getAttribute("data-length"));
+const inputLength = Number(inputRef.getAttribute('data-length'));
 
 const onInputBlur = function (event) {
 
